@@ -1,0 +1,154 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0 200px;
+}
+.container img{
+    width: 1.25rem;
+    height: auto;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.container-logo{
+    color: #3A3A3A;
+    font-size: 1.50rem;
+    font-weight: 700;
+}
+.container-menu ul{
+    display: flex;
+    gap: 40px;
+}
+ul{
+    color: #3A3A3A;
+    font-size: 1rem;
+    font-weight: 600;
+    list-style: none;
+}
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tea{
+    color: #3A3A3A;
+    font-size: 3.25rem;
+    font-weight: 700;
+}
+.cha{
+    color: #3A3A3A;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.btn-primary{
+    background-color: #E02C6D;
+    font-size: 1rem;
+    color: #fff;
+    padding: 10px 24px;
+    border: 0;
+    border-radius: 35px;
+}
+.banner-imag{
+    background-image: url(images/Circle\ design.svg);
+}
+.new{
+    background-color: #fff;
+    
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin: 120px 180px;
+    border: 1px solid skyblue;
+    padding: 10px;
+    
+}
+.header{
+    color: #3A3A3A;
+    font-size: 1.50rem;
+    font-weight: 700;
+    text-align: center;
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:30px;
+    padding: 44px;
+}
+.main-item{
+    height: 476px;
+    width: 320px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+}
+.last{
+    display: flex;
+    gap: 120px;
+    
+}
+footer{
+    width: 100%;
+    background-color: #0A0826;
+}
+.hero{
+    color: #fff;
+    text-align: center;
+}
+
+
+
+    
+
+
+
+
+
+/*responsive site*/
+
+@media screen and (max-width:576px) {
+    
+    .container,
+    .last,
+    .banner{
+        flex-direction: column;
+    }
+    .last-sect{
+        
+    }
+    .new{
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0;
+        gap: 10px;
+    }
+    .main{
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
+body{
+    margin: 0;
+}
+}
+
+
+@media screen and (min-width:577px) and (max-width:993px) {
+    .container,
+    .banner{
+        flex-direction: column;
+    }
+    .new{
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0;
+    }
+    .main{
+        grid-template-columns:1fr;
+        margin: 0;
+        padding: 0;
+    }
+ body,{
+    margin: 0;
+ }   
+
+    
+}
+    
